@@ -10,19 +10,6 @@ from get_api_key import get_api_key
 
 PROMPT = load_file("prompt.txt")
 
-
-# def get_api_key():
-#     # Read API key from environment variable to avoid embedding secrets in code.
-#     api_key = os.environ.get("GENAI_API_KEY")
-#     if not api_key:
-#         raise EnvironmentError(
-#             "GENAI_API_KEY environment variable not set. \n"
-#             "PowerShell: $Env:GENAI_API_KEY = 'YOUR_KEY'\n"
-#             "Command Prompt: set GENAI_API_KEY=YOUR_KEY"
-#         )
-#     return api_key
-
-
 def call_gemini_vision(api_key: str, img_path: str, prompt: str) -> str:
     """
     Send the image and prompt to the Google Generative AI library and return the model's reply.
