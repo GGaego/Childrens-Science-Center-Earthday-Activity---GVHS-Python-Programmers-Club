@@ -1,0 +1,1 @@
+Identify this item and respond with only one word: Trash, Compost, or Recycling.

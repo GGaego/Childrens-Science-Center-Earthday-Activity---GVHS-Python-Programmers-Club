@@ -5,19 +5,22 @@ import tempfile
 import time
 from PIL import Image
 from google import genai
+from load_file import load_file
+from get_api_key import get_api_key
 
-PROMPT = "Identify this item and respond with only one word: Trash, Compost, or Recycling."
+PROMPT = load_file("prompt.txt")
 
-def get_api_key():
-    # Read API key from environment variable to avoid embedding secrets in code.
-    api_key = os.environ.get("GENAI_API_KEY")
-    if not api_key:
-        raise EnvironmentError(
-            "GENAI_API_KEY environment variable not set. \n"
-            "PowerShell: $Env:GENAI_API_KEY = 'YOUR_KEY'\n"
-            "Command Prompt: set GENAI_API_KEY=YOUR_KEY"
-        )
-    return api_key
+
+# def get_api_key():
+#     # Read API key from environment variable to avoid embedding secrets in code.
+#     api_key = os.environ.get("GENAI_API_KEY")
+#     if not api_key:
+#         raise EnvironmentError(
+#             "GENAI_API_KEY environment variable not set. \n"
+#             "PowerShell: $Env:GENAI_API_KEY = 'YOUR_KEY'\n"
+#             "Command Prompt: set GENAI_API_KEY=YOUR_KEY"
+#         )
+#     return api_key
 
 
 def call_gemini_vision(api_key: str, img_path: str, prompt: str) -> str:
@@ -49,7 +52,7 @@ def main():
         sys.exit(1)
 
     # Open the default camera
-    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Error: Cannot open webcam. Check camera access and device index.")
         sys.exit(1)
