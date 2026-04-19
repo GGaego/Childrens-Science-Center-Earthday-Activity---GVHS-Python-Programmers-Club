@@ -1,11 +1,11 @@
 # 🌍 Earth Day AI Vision Scanner 📷🤖
 **Created by the GVHS Python Programmers Club**
 
-This project was built for the **NOVA Children's Science Center Lab - Earth Day Extravaganza!** It is an interactive booth game where kids can use a script utilizing an AI model to instantly tell them if the item is **Trash, Recycling, or Compost**.
+This project was built for the **2026 Childrens Science Center Lab Earthday Extravaganza at Loudoun Water** It is an interactive booth game where kids can use a script utilizing an AI model to instantly tell them if the item is **Trash, Recycling, or Compost**.
 
 Powered by Python, OpenCV, and Google's Gemini models.
 
-![Booth Activity Screenshot](link-to-your-image-here.png) -After event
+Check out our [event highlights on Instagram](https://www.instagram.com/p/DXVFsIklTgT/) to see the scanner in action during the Earth Day Extravaganza!
 
 ## 💡 How the Booth Works
 This activity is a fast-paced, timed sorting game! Here is how a round is played:
