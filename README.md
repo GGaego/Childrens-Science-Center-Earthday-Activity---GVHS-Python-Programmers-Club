@@ -5,6 +5,11 @@ This project was built for the **2026 Childrens Science Center Lab Earthday Extr
 
 Powered by Python, OpenCV, and Google's Gemini models.
 
+## 📸 Gallery
+| The Booth Setup | Our Team |
+| :---: | :---: |
+| ![Booth Setup](assets/IMG_4110.JPEG) | ![Team Photo](assets/IMG_4118.JPEG) |
+
 Check out our [event highlights on Instagram](https://www.instagram.com/p/DXVFsIklTgT/) to see the scanner in action during the Earth Day Extravaganza!
 
 ## 💡 How the Booth Works
