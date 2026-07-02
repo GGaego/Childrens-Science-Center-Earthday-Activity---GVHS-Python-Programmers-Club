@@ -51,7 +51,7 @@ GEMINI_API_KEY="your_api_key_here"
 ## 📝 The AI Prompt
 The brain of this program is controlled by `prompt.txt`. For the Earth Day theme, our prompt looks like this:
 
-> **You are an expert waste-sorting AI running an Earth Day recycling game for kids.** Your task is to analyze the webcam image, focus ONLY on the item being held up in the foreground, and ignore the person, hands, and room background.
+> Your task is to analyze the webcam image, focus ONLY on the item being held up in the foreground, and ignore the person, hands, and room background.
 >
 > **Classify the item into one of three bins based on standard rules:**
 > - **Recycling:** Clean plastic bottles, aluminum cans, glass, clean paper, and cardboard.
